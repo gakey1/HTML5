@@ -1,0 +1,219 @@
+/* CSS Code */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background-color: #252537;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+}
+
+/* I added */
+.header .container{
+  display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #6c5ce7;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .nav li {
+    margin: 10px 0;
+  }
+}
+
+.hero {
+  background-color: #1e1e2e;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #a29bfe;
+}
+
+.skills,
+.projects,
+.testimonials,
+.contact {
+  padding: 50px 20px;
+}
+
+.skills-grid,
+.projects-grid,
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill,
+.project,
+.testimonial {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skill:hover,
+.project:hover,
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #a29bfe;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #6c5ce7;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #a29bfe;
+}
+
+.footer {
+  background-color: #252537;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #6c5ce7;
+}
+
